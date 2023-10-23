@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#root {
+	display: grid;
+	place-content: center;
+	height: 100vh;
+	background-color: hsl(217, 100%, 97%);
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+
+	height: 550px;
+	width: 850px;
+	border-radius: 20px;
+	background-color: white;
+	padding: 20px;
+}
+.navbar {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-image: url('bg-sidebar-desktop.svg');
+	background-position: center;
+	flex-grow: 1;
+	gap: 20px;
+	border-radius: 10px;
+	min-width: 250px;
+	padding: 40px 30px;
+}
+.element {
+	flex-grow: 3;
+	padding: 40px 60px 40px 100px;
+}
+.selector {
+	display: grid;
+	place-content: center;
+	border: 1px solid hsl(0, 0%, 100%, 50%);
+	background-color: transparent;
+	color: white;
+	border-radius: 50%;
+	height: 35px;
+	width: 35px;
+}
+.navlink {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 15px;
+	width: 100%;
+}
+.navlink-side {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 5px;
+}
+.navlink-side p {
+	font-size: 12px;
+	font-weight: 400;
+	color: hsl(0, 0%, 100%, 50%);
+	letter-spacing: 1px;
+}
+.navlink-side h1 {
+	color: hsl(0, 0%, 100%, 85%);
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+.form-main {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.form-main h1 {
+	font-size: 28px;
+	font-weight: 700;
+	color: hsl(213, 96%, 18%);
+}
+.form-main p {
+	font-size: 14px;
+	color: hsl(231, 11%, 63%);
+}
+.info-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+}
+.info-form label {
+	font-size: 14px;
+	color: hsl(213, 96%, 18%);
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 5px;
+}
+.field input {
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid hsl(229, 24%, 87%);
+	outline: none;
+	padding: 5px 20px;
+	color: hsl(213, 96%, 18%);
+}
+.next {
+	display: flex;
+	flex-direction: row;
+	justify-items: flex-end;
+	align-items: flex-end;
+	width: 100%;
+	height: 100px;
+}
+.next button {
+	margin-left: 300px;
+	width: 100px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	background-color: hsl(213, 96%, 18%);
+	color: hsl(0, 0%, 100%);
+}
+.next button:hover {
+	background-color: hsl(213, 96%, 18%, 75%);
+}
