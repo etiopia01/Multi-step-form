@@ -4,7 +4,9 @@
 	box-sizing: border-box;
 	font-family: 'Ubuntu', sans-serif;
 }
-
+a {
+	text-decoration: none;
+}
 #root {
 	display: grid;
 	place-content: center;
@@ -47,6 +49,16 @@
 	height: 35px;
 	width: 35px;
 }
+.active-selector {
+	display: grid;
+	place-content: center;
+	border: 1px solid hsl(0, 0%, 100%, 50%);
+	background-color: hsl(0, 0%, 100%, 50%);
+	color: hsl(213, 96%, 18%);
+	border-radius: 50%;
+	height: 35px;
+	width: 35px;
+}
 .navlink {
 	display: flex;
 	justify-content: flex-start;
@@ -79,9 +91,12 @@
 	gap: 20px;
 }
 .form-main h1 {
-	font-size: 28px;
+	font-size: 30px;
 	font-weight: 700;
 	color: hsl(213, 96%, 18%);
+}
+#not-valid {
+	color: red;
 }
 .form-main p {
 	font-size: 14px;
@@ -117,13 +132,12 @@
 .next {
 	display: flex;
 	flex-direction: row;
-	justify-items: flex-end;
+	justify-content: space-between;
 	align-items: flex-end;
 	width: 100%;
-	height: 100px;
+	margin-top: 20px;
 }
 .next button {
-	margin-left: 300px;
 	width: 100px;
 	height: 40px;
 	border: none;
@@ -131,6 +145,74 @@
 	background-color: hsl(213, 96%, 18%);
 	color: hsl(0, 0%, 100%);
 }
+.next p {
+	font-size: 16px;
+	font-weight: 500;
+}
 .next button:hover {
 	background-color: hsl(213, 96%, 18%, 75%);
+}
+.plans {
+	display: flex;
+	width: 100%;
+	height: 200px;
+	justify-content: stretch;
+	align-items: stretch;
+	gap: 20px;
+	margin-top: 25px;
+}
+.plan {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 120px;
+	height: 170px;
+	border: 1px solid hsl(229, 24%, 87%);
+	border-radius: 10px;
+	padding: 15px;
+}
+.plan:hover {
+	border-color: hsl(243, 100%, 62%, 60%);
+	background-color: hsl(243, 100%, 62%, 10%);
+}
+
+.plan h2,
+.active h2 {
+	color: hsl(213, 96%, 18%);
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.plan p,
+.active p {
+	font-size: 12px;
+}
+.active {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 120px;
+	height: 170px;
+	border: 1px solid;
+	border-radius: 10px;
+	padding: 15px;
+	border-color: hsl(243, 100%, 62%, 90%);
+	background-color: hsl(243, 100%, 62%, 10%);
+}
+
+.icon,
+.icon2,
+.icon3 {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-position: center;
+}
+.icon {
+	background-image: url('icon-arcade.svg');
+}
+.icon2 {
+	background-image: url('icon-advanced.svg');
+}
+.icon3 {
+	background-image: url('icon-pro.svg');
 }
