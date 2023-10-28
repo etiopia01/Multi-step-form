@@ -1,17 +1,18 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
-export default function SelectPlan({ planPicker }) {
+export default function SelectPlan() {
 	const [selected, setSelected] = useState<string>('')
 
-	const handleSubmit = e => {
-		e.preventDefault()
-		planPicker(selected)
-	}
+	const navigate = useNavigate()
 
-	localStorage.getItem('info')
-
-	console.log(localStorage.getItem('info'))
+	
+const planPicker= ()=> {
+	localStorage.setItem('info', selected)
+	if(selected.length >= 2) {
+navigate("/addons")}
+}
+	
 	return (
 		<div className='form-main'>
 			<h1>Select your plan</h1>
@@ -50,9 +51,11 @@ export default function SelectPlan({ planPicker }) {
 			</div>
 			<div className='next'>
 				<Link to={'/'}>
-					<p onClick={() => planPicker('.')}> Go Back </p>
+					<p > Go Back </p>
 				</Link>
-				<button onClick={handleSubmit}>Next Step</button>
+				
+				<button onClick={planPicker}>Next Step</button>
+				
 			</div>
 		</div>
 	)

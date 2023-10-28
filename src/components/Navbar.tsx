@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { useState } from 'react'
+
 
 export default function Navbar() {
 	const { pathname } = useLocation()

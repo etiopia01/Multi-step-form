@@ -216,3 +216,44 @@ a {
 .icon3 {
 	background-image: url('icon-pro.svg');
 }
+.add-ons-selector {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	gap: 15px;
+
+}
+.addon {
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	gap: 15px;
+	border-radius: 10px;
+	border: 1px solid hsl(229, 24%, 87%);
+	padding: 15px;
+}
+.active-addon {
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	gap: 15px;
+	border-radius: 10px;
+	border: 1px solid hsl(243, 100%, 62%, 90%);
+	background-color:hsl(243, 100%, 62%, 10%) ;
+	padding: 15px;
+}
+.addon h3 ,
+.active-addon h3 {
+	font-size: 14px;
+	color: hsl(213, 96%, 18%);
+}
+
+.addon p ,
+.active-addon p {
+	margin-top: 5px;
+}
+.addon-price {
+	margin-left: auto;
+	color: hsl(243, 100%, 62%, 90%) !important;
+}
+

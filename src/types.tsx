@@ -9,3 +9,9 @@ export type Valid = {
 	email: boolean | undefined
 	phone: boolean | undefined
 }
+export type AddonType = {
+	title : string
+	description: string
+	price : string
+	id : number
+}

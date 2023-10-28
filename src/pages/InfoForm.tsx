@@ -8,11 +8,7 @@ import {
 } from '../components/utils'
 import { Link, useNavigate } from 'react-router-dom'
 
-export default function InfoForm({
-	sendInfo,
-}: {
-	sendInfo: (info: PersonalInfo) => void
-}) {
+export default function InfoForm(){
 	const [info, setInfo] = useState<PersonalInfo>({
 		name: '.',
 		email: '.',
@@ -40,7 +36,7 @@ export default function InfoForm({
 		localStorage.setItem('email', info.email)
 		localStorage.setItem('phone', info.phone)
 
-		sendInfo(info)
+		
 	}
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		setInfo(prev => {
