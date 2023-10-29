@@ -15,3 +15,8 @@ export type AddonType = {
 	price : string
 	id : number
 }
+
+export type Summary = {
+	title: string
+	price: string
+}

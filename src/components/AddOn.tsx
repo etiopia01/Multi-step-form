@@ -3,15 +3,19 @@ import { AddonType } from "../types"
 
 export default function AddOn({title, description , price, id}:AddonType) {
     const [active, setActive] = useState(false)
+
+    const ObjAddon = {"title": title, "price": price}
+
+
 const handleChange = ()=>{
     setActive(!active)
 if(active === false){
-    localStorage.setItem("title"+ id , title)
-    localStorage.setItem("price"+id, price)
+    localStorage.setItem("addon"+ id , JSON.stringify(ObjAddon))
+   
 }
 else{
-    localStorage.removeItem("title"+ id)
-    localStorage.removeItem("price"+id)
+    localStorage.removeItem("addon"+ id)
+    
 }}
 
     return (

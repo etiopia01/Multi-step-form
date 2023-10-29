@@ -89,6 +89,8 @@ a {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	justify-content: flex-start;
+	height: 100%;
 }
 .form-main h1 {
 	font-size: 30px;
@@ -135,7 +137,8 @@ a {
 	justify-content: space-between;
 	align-items: flex-end;
 	width: 100%;
-	margin-top: 20px;
+	margin-top: auto;
+	
 }
 .next button {
 	width: 100px;
@@ -144,6 +147,8 @@ a {
 	border-radius: 5px;
 	background-color: hsl(213, 96%, 18%);
 	color: hsl(0, 0%, 100%);
+	translate:  0 30%;
+	
 }
 .next p {
 	font-size: 16px;
@@ -257,3 +262,59 @@ a {
 	color: hsl(243, 100%, 62%, 90%) !important;
 }
 
+.summary {
+	display: flex;
+	flex-direction: column;
+	background-color: hsl(243, 100%, 62%, 3%) ;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.active-section,
+.summary-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.active-section h3 {
+	color: hsl(213, 96%, 18%);
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+.active-section span {
+	color: hsl(213, 96%, 18%);
+	font-size: 14px;
+	margin-left: auto;
+	font-weight: 500;
+}
+
+.summary-section h3 {
+	font-size: 14px;
+	font-weight: 400;
+	color: hsl(231, 11%, 63%);
+	margin-bottom: 5px;
+}
+.summary-section span {
+	color: hsl(213, 96%, 18%,80%);
+	font-size: 14px;
+	margin-left: auto;
+}
+.summary-section p {
+	display: none;
+}
+
+.active-section .break {
+	height: 1px;
+	width: 300px;
+	background-color:hsl(229, 24%, 87%);
+	
+}
+
+.section-body {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 20px;
+}

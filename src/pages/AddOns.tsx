@@ -1,7 +1,6 @@
 import { Link} from "react-router-dom"
 import AddOn from "../components/AddOn"
-import { useState } from "react"
-import { AddonType } from "../types"
+
 
 
 export default function AddOns() {
@@ -26,7 +25,9 @@ export default function AddOns() {
                 <Link to={"/plan"}>
                 <p>Go Back</p>
                 </Link>
+                <Link to={"/summary"}>
                 <button>Next Step</button>
+                </Link>
             </div>
         </div>
     )
