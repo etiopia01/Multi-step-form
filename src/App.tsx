@@ -7,6 +7,7 @@ import InfoForm from './pages/InfoForm'
 import SelectPlan from './pages/SelectPlan'
 import AddOns from './pages/AddOns'
 import Summary from './pages/Summary'
+import End from './pages/End'
 
 function App() {
 	useEffect(()=> {
@@ -22,6 +23,7 @@ function App() {
 					<Route path='/plan' element={<SelectPlan />} />
 					<Route path='/addons' element={<AddOns />}/>
 					<Route path='/summary' element={<Summary/>} />
+					<Route path='/end' element={<End/>}/>
 				</Routes>
 			</div>
 		</div>

@@ -318,3 +318,28 @@ a {
 	width: 100%;
 	padding: 20px;
 }
+
+.thank-you-icon {
+	background-image: url("icon-thank-you.svg");
+	background-size: contain;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+}
+.end {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 20px;
+	padding: 70px 50px 50px 20px;
+}
+.end h1 {
+	color: hsl(213, 96%, 18%);
+	font-size: 28px;
+}
+.end p {
+	font-size: 14px;
+	color: hsl(231, 11%, 63%);
+}
