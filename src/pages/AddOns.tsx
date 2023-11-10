@@ -1,5 +1,5 @@
 import { Link} from "react-router-dom"
-import AddOn from "../components/AddOn"
+import AddOn from "./components/AddOn"
 
 
 

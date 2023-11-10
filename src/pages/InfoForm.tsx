@@ -5,7 +5,7 @@ import {
 	validEmail,
 	validName,
 	validate,
-} from '../components/utils'
+} from './components/utils'
 import { Link, useNavigate } from 'react-router-dom'
 
 export default function InfoForm(){

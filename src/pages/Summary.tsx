@@ -1,5 +1,5 @@
-import SummaryAddon from "../components/SummaryAddon"
-import SummaryPlan from "../components/SummaryPlan"
+import SummaryAddon from "./components/SummaryAddon"
+import SummaryPlan from "./components/SummaryPlan"
 import { Link } from "react-router-dom"
 
 export default function Summary(){

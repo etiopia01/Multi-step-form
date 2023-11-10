@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { AddonType } from "../types"
+import { AddonType } from "../../types"
 
 export default function AddOn({title, description , price, id}:AddonType) {
     const [active, setActive] = useState(false)
